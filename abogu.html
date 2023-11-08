@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Pagina Web Secretaria</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+body {
+    text-align: center;
+    font-family: sans-serif;
+}
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #171717;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a { 
+    display: block;
+    padding: 20px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background: #e91e63;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background: url(img/secre.png) no-repeat center;
+    background-size: cover;
+}
+
+.title {
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #181061;
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #1f2aaa;
+    padding: 0 150px;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #2dcccc;
+    color: #1f2aaa;
+    text-decoration: none;
+    background: #c0d352;
+}
+
+.boton:hover {
+    background: none;
+}
+
+.content {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sau {
+    padding: 50px 0;
+    background: #96b152;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.box-container .box {
+    height: 170px;
+    width: 270px;
+    background: #c08e5f;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px rgba(0 , 0, 0, .3);
+    margin: 20px;
+}
+
+.box-container .box i {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    color: #1f2aaa;
+    background: #e91e63;
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.box-container .box h3 {
+    font-size: 20px;
+    color: #e91e63;
+}
+
+.box-container .box p {
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.price {
+    background: url(img/costos2.png) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+.about {
+    background: #96b152;
+    padding: 50px;
+}
+
+.box-container2 {
+    display: flex;
+    justify-content: center;
+    padding-top:  50px;
+    flex-wrap: wrap;
+}
+
+.box-container2 .box {
+    width: 250px;
+    padding-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 5px 5px rgba(0 , 0, 0, .3);
+    background: #e1c569;
+    margin: 20px 20px;
+}
+
+.box-container2 .box img {
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -50px;
+    border: 6px solid #e91e63;
+}
+
+.box-container2 .box h3 {
+    font-size: 20px;
+    color: #e91e63;
+    padding-top: 10px;
+}
+
+.box-container2 .box p {
+    font-size: 18px;
+    color:#171717;
+    padding: 0;
+}
+
+.box-container2 .box .stars i {
+    font-size: 15px;
+    color: #e91e63;
+}
+
+.contact {
+    padding: 50px;
+    background: #c08e5f;
+}
+
+.footer-section {
+    display: flex;
+}
+
+.f-enlaces {
+    display: flex;
+    flex-direction: column;
+    margin: 0 100px;
+}
+
+.f-enlaces a {
+    color: #1f2aaa;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    p {
+        padding: 0 50px;
+    }
+    .title {
+        margin-bottom: 0px;
+        font-size: 40px;
+    }
+    .sau {
+        height: 100vh;
+        padding: 50px 0;
+    }
+    .about {
+        height: 100vh;
+        padding: 50px 0;
+    }
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .f-enlaces {
+        display: none;
+    }
+    .navbar {
+        display: none;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="logo">
+            <a href="#">Abogado</a>
+
+        </div>
+        
+    </div>
+
+    <header class="content header">
+        <h2 class="title">Abogado</h2>
+        <p>
+            En el ámbito legal, estamos comprometidos a ser tu aliado en cuestiones legales. Nuestro equipo de abogados altamente calificados se dedica 
+            a brindarte representación legal sólida y soluciones efectivas para tus necesidades legales. Con un historial de éxitos en casos civiles, 
+            penales y empresariales, nuestro equipo tiene la experiencia necesaria para luchar en tu nombre y obtener resultados favorables. 
+            Ya sea que enfrentes un desafío legal complejo o busques asesoramiento preventivo, estamos aquí para proteger tus derechos e intereses.
+        </p>
+        <a href="#" class="boton">Saber mas</a>
+
+    </header>
+
+    <section class="content sau">
+        <h2 class="title">Mi Especialidad</h2>
+        <p>
+            Mi especialidad radica en la organización y la atención a los detalles, lo que me permite gestionar eficazmente las tareas administrativas 
+            y aliviar la carga de trabajo de mis superiores. Estoy comprometida en mantener una comunicación fluida, mantener registros precisos y asegurarme
+            de que todo esté en su lugar para que la empresa funcione de manera eficiente.
+        </p>
+        <a href="#" class="boton">Saber mas</a>
+    </section>
+
+    <section class="content price">
+        <article class="contain">
+            <h2 class="title">Mi Objetivo</h2>
+            <p>
+                mi objetivo fundamental es garantizar la eficiencia y la organización en la empresa, facilitando la gestión de tareas administrativas
+                y ayudando a mantener una comunicación efectiva. Mi meta es aliviar la carga de trabajo de mis superiores, asegurarme de que los procesos 
+                funcionen sin problemas y contribuir al éxito general de la empresa a través de mi dedicación y atención a los detalles.
+            </p>
+            <a href="#" class="boton">Saber Precio</a>
+        </article>
+
+    </section>
+    <section class="content about">
+        <h2 class="title">Sobre Mi</h2>
+        <p>
+            Mi compromiso con la confidencialidad y la ética profesional es primordial, ya que gestiono información sensible y actúo como un pilar de apoyo 
+            para la empresa. La organización y la puntualidad son cruciales para mantener la oficina en funcionamiento sin problemas y para asegurarme de 
+            que las tareas se completen de manera efectiva. Siempre busco colaborar con mi equipo y brindar un servicio excepcional a nuestros clientes, 
+            lo que incluye la adaptabilidad para abordar desafíos y la iniciativa para mejorar continuamente los procesos.
+        </p>
+        <div class="box-container2">
+            <div class="box">
+                <img src="img/pic1.jpg" alt="">
+                <h3>JOSE ONTIVEROS</h3>
+                <p>Abogado Empresarial</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="content contact">
+        <h2 class="title">Contacto</h2>
+        <div class="footer-section">
+            <div>
+                <p>Telefono Jose Fox Ontiveros: 68045938</p>
+            </div>
+            <div class="f-enlaces">
+                <a href="#">Ontiveros Macias</a>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">Linkedin</a>
+            </div>
+
+            <figure>
+                <img src="img/mapa.png" height="220px" width="100%" alt="mapa">
+            </figure>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
